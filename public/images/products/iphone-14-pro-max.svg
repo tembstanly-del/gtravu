@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" fill="none">
+  <defs>
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a3c"/>
+      <stop offset="100%" style="stop-color:#1c1c1e"/>
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A2E3D"/>
+      <stop offset="100%" style="stop-color:#030C10"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="10" width="160" height="380" rx="30" fill="url(#phoneGradient)" stroke="#5a5a5c" stroke-width="2"/>
+  <rect x="28" y="18" width="144" height="364" rx="24" fill="url(#screenGradient)"/>
+  <rect x="70" y="28" width="60" height="20" rx="10" fill="#1c1c1e"/>
+  <circle cx="85" cy="38" r="4" fill="#0A2E3D"/>
+  <circle cx="115" cy="38" r="4" fill="#1c1c1e"/>
+  <rect x="180" y="100" width="4" height="50" rx="2" fill="#5a5a5c"/>
+  <rect x="16" y="90" width="4" height="30" rx="2" fill="#5a5a5c"/>
+  <rect x="16" y="130" width="4" height="30" rx="2" fill="#5a5a5c"/>
+  <text x="100" y="200" font-family="system-ui" font-size="12" fill="#E8943A" text-anchor="middle">iPhone 14</text>
+  <text x="100" y="218" font-family="system-ui" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Pro Max</text>
+</svg>
