@@ -79,7 +79,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 ## Business Information
 
 - **Owner**: Lukundo G. Muhango
-- **WhatsApp**: 0972 707 616
+- **WhatsApp**:
 - **Location**: Lusaka, Zambia
 - **Model**: Delivery-only, nationwide
 
