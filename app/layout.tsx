@@ -4,6 +4,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://lkdelectronics.com"
+  ),
   title: {
     default: "LKD Electronics | Premium Smartphones in Zambia",
     template: "%s | LKD Electronics",
