@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400">
   <defs>
     <linearGradient id="body" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4A3C5C"/>
-      <stop offset="100%" stop-color="#2A1F38"/>
+      <stop offset="0%" stop-color="#E8E8ED"/>
+      <stop offset="100%" stop-color="#C7C7CC"/>
     </linearGradient>
     <linearGradient id="screen" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#1E1E2E"/>
@@ -15,13 +15,11 @@
   <rect x="70" y="28" width="60" height="22" rx="11" fill="#000"/>
   <circle cx="90" cy="39" r="5" fill="#1a1a2a"/>
   <circle cx="110" cy="39" r="3" fill="#1a1a2a"/>
-  <rect x="140" y="25" width="32" height="70" rx="12" fill="#2A1F38" stroke="#4A3C5C" stroke-width="1"/>
-  <circle cx="156" cy="42" r="11" fill="#0a0a12" stroke="#3A2C4A" stroke-width="1"/>
-  <circle cx="156" cy="42" r="7" fill="#1a1a2a"/>
-  <circle cx="156" cy="65" r="11" fill="#0a0a12" stroke="#3A2C4A" stroke-width="1"/>
-  <circle cx="156" cy="65" r="7" fill="#1a1a2a"/>
-  <circle cx="156" cy="88" r="11" fill="#0a0a12" stroke="#3A2C4A" stroke-width="1"/>
-  <circle cx="156" cy="88" r="7" fill="#1a1a2a"/>
+  <rect x="140" y="28" width="30" height="52" rx="10" fill="#C7C7CC" stroke="#A0A0A5" stroke-width="1"/>
+  <circle cx="155" cy="45" r="10" fill="#0a0a12" stroke="#888" stroke-width="1"/>
+  <circle cx="155" cy="45" r="6" fill="#1a1a2a"/>
+  <circle cx="155" cy="68" r="10" fill="#0a0a12" stroke="#888" stroke-width="1"/>
+  <circle cx="155" cy="68" r="6" fill="#1a1a2a"/>
   <rect x="40" y="90" width="35" height="35" rx="8" fill="#FF3B30"/>
   <rect x="82" y="90" width="35" height="35" rx="8" fill="#34C759"/>
   <rect x="124" y="90" width="35" height="35" rx="8" fill="#007AFF"/>
