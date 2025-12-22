@@ -10,6 +10,41 @@ export interface Product {
 }
 
 export const products: Product[] = [
+  // iPhone 16 Series (Latest)
+  {
+    id: "iphone-16-pro-max-256",
+    name: "iPhone 16 Pro Max",
+    brand: "apple",
+    condition: "new",
+    storage: "256GB",
+    image: "/images/products/iphone-16-pro-max.svg",
+    featured: true,
+    whatsappMessage:
+      "Hi LKD Electronics! I'm interested in the iPhone 16 Pro Max 256GB (Brand New). Is it available?",
+  },
+  {
+    id: "iphone-16-pro-256",
+    name: "iPhone 16 Pro",
+    brand: "apple",
+    condition: "new",
+    storage: "256GB",
+    image: "/images/products/iphone-16-pro.svg",
+    featured: true,
+    whatsappMessage:
+      "Hi LKD Electronics! I'm interested in the iPhone 16 Pro 256GB (Brand New). Is it available?",
+  },
+  {
+    id: "iphone-16-128",
+    name: "iPhone 16",
+    brand: "apple",
+    condition: "new",
+    storage: "128GB",
+    image: "/images/products/iphone-16.svg",
+    featured: false,
+    whatsappMessage:
+      "Hi LKD Electronics! I'm interested in the iPhone 16 128GB (Brand New). Is it available?",
+  },
+  // iPhone 15 Series
   {
     id: "iphone-15-pro-max-256",
     name: "iPhone 15 Pro Max",
@@ -28,7 +63,7 @@ export const products: Product[] = [
     condition: "new",
     storage: "128GB",
     image: "/images/products/iphone-15-pro.svg",
-    featured: true,
+    featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 15 Pro 128GB (Brand New). Is it available?",
   },
@@ -43,6 +78,7 @@ export const products: Product[] = [
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 15 128GB (Brand New). Is it available?",
   },
+  // Samsung Galaxy S24 Series
   {
     id: "samsung-s24-ultra-512",
     name: "Samsung Galaxy S24 Ultra",
@@ -76,6 +112,53 @@ export const products: Product[] = [
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Samsung Galaxy S24 128GB (Brand New). Is it available?",
   },
+  // Samsung Galaxy Z Series (Foldables)
+  {
+    id: "samsung-z-fold-6-512",
+    name: "Samsung Galaxy Z Fold 6",
+    brand: "samsung",
+    condition: "new",
+    storage: "512GB",
+    image: "/images/products/samsung-z-fold-6.svg",
+    featured: true,
+    whatsappMessage:
+      "Hi LKD Electronics! I'm interested in the Samsung Galaxy Z Fold 6 512GB (Brand New). Is it available?",
+  },
+  {
+    id: "samsung-z-flip-6-256",
+    name: "Samsung Galaxy Z Flip 6",
+    brand: "samsung",
+    condition: "new",
+    storage: "256GB",
+    image: "/images/products/samsung-z-flip-6.svg",
+    featured: false,
+    whatsappMessage:
+      "Hi LKD Electronics! I'm interested in the Samsung Galaxy Z Flip 6 256GB (Brand New). Is it available?",
+  },
+  // Google Pixel 9 Series (Latest)
+  {
+    id: "pixel-9-pro-256",
+    name: "Google Pixel 9 Pro",
+    brand: "pixel",
+    condition: "new",
+    storage: "256GB",
+    image: "/images/products/pixel-9-pro.svg",
+    featured: true,
+    whatsappMessage:
+      "Hi LKD Electronics! I'm interested in the Google Pixel 9 Pro 256GB (Brand New). Is it available?",
+  },
+  {
+    id: "pixel-9-128",
+    name: "Google Pixel 9",
+    brand: "pixel",
+    condition: "new",
+    storage: "128GB",
+    image: "/images/products/pixel-9.svg",
+    featured: false,
+    whatsappMessage:
+      "Hi LKD Electronics! I'm interested in the Google Pixel 9 128GB (Brand New). Is it available?",
+  },
+  // Google Pixel 8 Series
   {
     id: "pixel-8-pro-256",
     name: "Google Pixel 8 Pro",
@@ -83,7 +166,7 @@ export const products: Product[] = [
     condition: "new",
     storage: "256GB",
     image: "/images/products/pixel-8-pro.svg",
-    featured: true,
+    featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Google Pixel 8 Pro 256GB (Brand New). Is it available?",
   },
@@ -98,6 +181,7 @@ export const products: Product[] = [
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Google Pixel 8 128GB (Brand New). Is it available?",
   },
+  // Refurbished Phones
   {
     id: "iphone-14-pro-max-256-refurb",
     name: "iPhone 14 Pro Max",
@@ -116,7 +200,7 @@ export const products: Product[] = [
     condition: "refurbished",
     storage: "128GB",
     image: "/images/products/iphone-13.svg",
-    featured: true,
+    featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 13 128GB (Refurbished). Is it available?",
   },
