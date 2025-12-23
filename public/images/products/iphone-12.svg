@@ -1,105 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 560" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
   <defs>
-    <linearGradient id="blueFrame" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4A6FA5"/>
-      <stop offset="50%" style="stop-color:#2E5090"/>
-      <stop offset="100%" style="stop-color:#1A3B6D"/>
+    <!-- Starlight/White gradient -->
+    <linearGradient id="starlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="50%" stop-color="#f0ede8"/>
+      <stop offset="100%" stop-color="#e5e2dd"/>
     </linearGradient>
-    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e"/>
-      <stop offset="50%" style="stop-color:#0f0f1a"/>
-      <stop offset="100%" style="stop-color:#050510"/>
+    <!-- Teal/Blue screen wallpaper -->
+    <linearGradient id="screenTeal" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ecdc4"/>
+      <stop offset="30%" stop-color="#44a8b3"/>
+      <stop offset="60%" stop-color="#7dd8d0"/>
+      <stop offset="100%" stop-color="#2c7873"/>
     </linearGradient>
-    <linearGradient id="cameraLens" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2a2a3a"/>
-      <stop offset="40%" style="stop-color:#0a0a15"/>
-      <stop offset="100%" style="stop-color:#1a1a2a"/>
+    <linearGradient id="lens" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a3a"/>
+      <stop offset="50%" stop-color="#0a0a15"/>
+      <stop offset="100%" stop-color="#1a1a2a"/>
     </linearGradient>
-    <radialGradient id="lensReflection" cx="30%" cy="30%" r="50%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.4"/>
-      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    <radialGradient id="lensShine" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.2"/>
     </filter>
   </defs>
 
-  <!-- Phone Body - Blue -->
-  <rect x="20" y="15" width="240" height="530" rx="45" fill="url(#blueFrame)" filter="url(#shadow)"/>
-  <rect x="24" y="19" width="232" height="522" rx="42" fill="#1A3B6D"/>
+  <!-- BACK VIEW (Left) -->
+  <g transform="translate(20, 30)">
+    <rect x="0" y="0" width="150" height="320" rx="30" fill="url(#starlight)" filter="url(#shadow)"/>
+    <rect x="2" y="2" width="146" height="316" rx="28" fill="#f0ede8"/>
 
-  <!-- Screen -->
-  <rect x="28" y="23" width="224" height="514" rx="38" fill="url(#screenGlow)"/>
+    <!-- Dual camera module (diagonal) -->
+    <rect x="8" y="8" width="52" height="52" rx="14" fill="#e5e2dd"/>
 
-  <!-- Notch -->
-  <path d="M95 23 L95 38 Q95 50, 107 50 L173 50 Q185 50, 185 38 L185 23" fill="#1A3B6D"/>
-  <circle cx="125" cy="38" r="6" fill="#1a1a2a"/>
-  <circle cx="125" cy="38" r="4" fill="#0a0a15"/>
-  <ellipse cx="123" cy="36" rx="1.5" ry="1" fill="url(#lensReflection)"/>
-  <rect x="140" y="32" width="30" height="10" rx="5" fill="#1a1a2a"/>
+    <!-- Camera 1 - Main (top-left) -->
+    <circle cx="24" cy="24" r="12" fill="#0a0a12" stroke="#c0bdb8" stroke-width="2"/>
+    <circle cx="24" cy="24" r="8" fill="url(#lens)"/>
+    <circle cx="24" cy="24" r="5" fill="#050508"/>
+    <ellipse cx="21" cy="21" rx="2.5" ry="1.5" fill="url(#lensShine)"/>
 
-  <!-- Status Bar -->
-  <text x="48" y="48" font-family="SF Pro Display, system-ui" font-size="15" fill="#fff" font-weight="600">9:41</text>
-  <g transform="translate(190, 34)">
-    <rect x="0" y="6" width="3" height="6" rx="1" fill="#fff"/>
-    <rect x="5" y="4" width="3" height="8" rx="1" fill="#fff"/>
-    <rect x="10" y="2" width="3" height="10" rx="1" fill="#fff"/>
-    <rect x="15" y="0" width="3" height="12" rx="1" fill="#fff"/>
-    <rect x="24" y="2" width="22" height="10" rx="3" stroke="#fff" stroke-width="1.5" fill="none"/>
-    <rect x="46" y="5" width="2" height="4" rx="0.5" fill="#fff"/>
-    <rect x="26" y="4" width="16" height="6" rx="1.5" fill="#34C759"/>
+    <!-- Camera 2 - Ultra Wide (bottom-right) -->
+    <circle cx="44" cy="44" r="12" fill="#0a0a12" stroke="#c0bdb8" stroke-width="2"/>
+    <circle cx="44" cy="44" r="8" fill="url(#lens)"/>
+    <circle cx="44" cy="44" r="5" fill="#050508"/>
+    <ellipse cx="41" cy="41" rx="2.5" ry="1.5" fill="url(#lensShine)"/>
+
+    <!-- Flash -->
+    <circle cx="44" cy="24" r="5" fill="#FFF8E6"/>
+
+    <!-- Apple Logo -->
+    <g transform="translate(60, 150)">
+      <path d="M15 0C15 0 14 5 10 8C6 11 0 10 0 15C0 20 5 25 10 30C15 35 18 38 20 38C22 38 25 35 30 30C35 25 40 20 40 15C40 10 34 11 30 8C26 5 25 0 25 0C25 0 22 3 20 3C18 3 15 0 15 0Z" fill="#a0a0a0" opacity="0.5" transform="scale(0.5)"/>
+    </g>
   </g>
 
-  <!-- App Icons -->
-  <g transform="translate(45, 80)">
-    <rect x="0" y="0" width="52" height="52" rx="12" fill="#FF3B30"/>
-    <rect x="67" y="0" width="52" height="52" rx="12" fill="#34C759"/>
-    <rect x="134" y="0" width="52" height="52" rx="12" fill="#007AFF"/>
-    <rect x="0" y="67" width="52" height="52" rx="12" fill="#FF9500"/>
-    <rect x="67" y="67" width="52" height="52" rx="12" fill="#AF52DE"/>
-    <rect x="134" y="67" width="52" height="52" rx="12" fill="#5856D6"/>
-    <rect x="0" y="134" width="52" height="52" rx="12" fill="#FF2D55"/>
-    <rect x="67" y="134" width="52" height="52" rx="12" fill="#00C7BE"/>
-    <rect x="134" y="134" width="52" height="52" rx="12" fill="#32ADE6"/>
-    <rect x="0" y="201" width="52" height="52" rx="12" fill="#64D2FF"/>
-    <rect x="67" y="201" width="52" height="52" rx="12" fill="#BF5AF2"/>
-    <rect x="134" y="201" width="52" height="52" rx="12" fill="#30D158"/>
+  <!-- FRONT VIEW (Right) -->
+  <g transform="translate(200, 30)">
+    <rect x="0" y="0" width="150" height="320" rx="30" fill="url(#starlight)" filter="url(#shadow)"/>
+    <rect x="4" y="4" width="142" height="312" rx="26" fill="#0a0a0f"/>
+
+    <rect x="6" y="6" width="138" height="308" rx="24" fill="url(#screenTeal)"/>
+
+    <!-- Wave pattern -->
+    <path d="M6 180 Q75 100 144 160 Q75 220 6 180 Z" fill="#44a8b3" opacity="0.5"/>
+    <path d="M6 220 Q75 160 144 200 Q75 280 6 240 Z" fill="#2c7873" opacity="0.4"/>
+
+    <!-- Notch -->
+    <path d="M45 6 L45 22 Q45 32 55 32 L95 32 Q105 32 105 22 L105 6" fill="#0a0a0f"/>
+
+    <text x="14" y="24" font-family="system-ui" font-size="10" fill="#fff" font-weight="600">9:41</text>
+
+    <rect x="50" y="300" width="50" height="4" rx="2" fill="#fff" opacity="0.5"/>
   </g>
-
-  <!-- Dock -->
-  <rect x="38" y="468" width="204" height="60" rx="22" fill="rgba(120,120,128,0.2)"/>
-  <rect x="52" y="478" width="42" height="42" rx="10" fill="#30D158"/>
-  <rect x="102" y="478" width="42" height="42" rx="10" fill="#007AFF"/>
-  <rect x="152" y="478" width="42" height="42" rx="10" fill="#FF9500"/>
-  <rect x="202" y="478" width="42" height="42" rx="10" fill="#FF3B30"/>
-
-  <!-- Home Indicator -->
-  <rect x="100" y="542" width="80" height="5" rx="2.5" fill="#fff" opacity="0.5"/>
-
-  <!-- Side Buttons -->
-  <rect x="10" y="100" width="5" height="22" rx="2" fill="#4A6FA5"/>
-  <rect x="10" y="135" width="5" height="40" rx="2" fill="#4A6FA5"/>
-  <rect x="10" y="185" width="5" height="40" rx="2" fill="#4A6FA5"/>
-  <rect x="265" y="160" width="5" height="65" rx="2" fill="#4A6FA5"/>
-
-  <!-- Camera Module - Diagonal Layout -->
-  <rect x="160" y="28" width="75" height="75" rx="20" fill="#2E5090" stroke="#4A6FA5" stroke-width="1"/>
-
-  <!-- Camera 1 -->
-  <circle cx="180" cy="48" r="16" fill="#1A3B6D" stroke="#4A6FA5" stroke-width="1.5"/>
-  <circle cx="180" cy="48" r="12" fill="url(#cameraLens)"/>
-  <circle cx="180" cy="48" r="7" fill="#0a0a15"/>
-  <circle cx="180" cy="48" r="4" fill="#1a1a2a"/>
-  <ellipse cx="177" cy="45" rx="2" ry="1.5" fill="url(#lensReflection)"/>
-
-  <!-- Camera 2 -->
-  <circle cx="215" cy="83" r="16" fill="#1A3B6D" stroke="#4A6FA5" stroke-width="1.5"/>
-  <circle cx="215" cy="83" r="12" fill="url(#cameraLens)"/>
-  <circle cx="215" cy="83" r="7" fill="#0a0a15"/>
-  <circle cx="215" cy="83" r="4" fill="#1a1a2a"/>
-  <ellipse cx="212" cy="80" rx="2" ry="1.5" fill="url(#lensReflection)"/>
-
-  <!-- Flash -->
-  <circle cx="215" cy="48" r="6" fill="#1A3B6D" stroke="#4A6FA5" stroke-width="1"/>
-  <circle cx="215" cy="48" r="4" fill="#FFF5E6"/>
 </svg>
