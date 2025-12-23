@@ -16,7 +16,7 @@ export const products: Product[] = [
     brand: "apple",
     condition: "new",
     storage: "256GB",
-    image: "/images/products/iphone-15-pro-max.jpg",
+    image: "/images/products/iphone-15-pro-max.svg",
     featured: true,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 15 Pro Max 256GB (Brand New). Is it available?",
@@ -27,7 +27,7 @@ export const products: Product[] = [
     brand: "apple",
     condition: "new",
     storage: "128GB",
-    image: "/images/products/iphone-15-pro.jpg",
+    image: "/images/products/iphone-15-pro.svg",
     featured: true,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 15 Pro 128GB (Brand New). Is it available?",
@@ -38,7 +38,7 @@ export const products: Product[] = [
     brand: "apple",
     condition: "new",
     storage: "128GB",
-    image: "/images/products/iphone-15.jpg",
+    image: "/images/products/iphone-15.svg",
     featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 15 128GB (Brand New). Is it available?",
@@ -49,7 +49,7 @@ export const products: Product[] = [
     brand: "samsung",
     condition: "new",
     storage: "512GB",
-    image: "/images/products/samsung-s24-ultra.jpg",
+    image: "/images/products/samsung-s24-ultra.svg",
     featured: true,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Samsung Galaxy S24 Ultra 512GB (Brand New). Is it available?",
@@ -60,7 +60,7 @@ export const products: Product[] = [
     brand: "samsung",
     condition: "new",
     storage: "256GB",
-    image: "/images/products/samsung-s24-plus.jpg",
+    image: "/images/products/samsung-s24-plus.svg",
     featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Samsung Galaxy S24+ 256GB (Brand New). Is it available?",
@@ -71,7 +71,7 @@ export const products: Product[] = [
     brand: "samsung",
     condition: "new",
     storage: "128GB",
-    image: "/images/products/samsung-s24.jpg",
+    image: "/images/products/samsung-s24.svg",
     featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Samsung Galaxy S24 128GB (Brand New). Is it available?",
@@ -82,7 +82,7 @@ export const products: Product[] = [
     brand: "pixel",
     condition: "new",
     storage: "256GB",
-    image: "/images/products/pixel-8-pro.jpg",
+    image: "/images/products/pixel-8-pro.svg",
     featured: true,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Google Pixel 8 Pro 256GB (Brand New). Is it available?",
@@ -93,7 +93,7 @@ export const products: Product[] = [
     brand: "pixel",
     condition: "new",
     storage: "128GB",
-    image: "/images/products/pixel-8.jpg",
+    image: "/images/products/pixel-8.svg",
     featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Google Pixel 8 128GB (Brand New). Is it available?",
@@ -104,7 +104,7 @@ export const products: Product[] = [
     brand: "apple",
     condition: "refurbished",
     storage: "256GB",
-    image: "/images/products/iphone-14-pro-max.jpg",
+    image: "/images/products/iphone-14-pro-max.svg",
     featured: true,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 14 Pro Max 256GB (Refurbished). Is it available?",
@@ -115,7 +115,7 @@ export const products: Product[] = [
     brand: "apple",
     condition: "refurbished",
     storage: "128GB",
-    image: "/images/products/iphone-13.jpg",
+    image: "/images/products/iphone-13.svg",
     featured: true,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 13 128GB (Refurbished). Is it available?",
@@ -126,7 +126,7 @@ export const products: Product[] = [
     brand: "apple",
     condition: "refurbished",
     storage: "64GB",
-    image: "/images/products/iphone-12.jpg",
+    image: "/images/products/iphone-12.svg",
     featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the iPhone 12 64GB (Refurbished). Is it available?",
@@ -137,7 +137,7 @@ export const products: Product[] = [
     brand: "samsung",
     condition: "refurbished",
     storage: "256GB",
-    image: "/images/products/samsung-s23-ultra.jpg",
+    image: "/images/products/samsung-s23-ultra.svg",
     featured: false,
     whatsappMessage:
       "Hi LKD Electronics! I'm interested in the Samsung Galaxy S23 Ultra 256GB (Refurbished). Is it available?",
